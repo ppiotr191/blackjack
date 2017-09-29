@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>BlackJack</title>
+  <meta name="description" content="BlackJack Game">
+  <meta name="author" content="ppiotr91">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/buttons.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="blackjack">
+		<h1>Black jack</h1>
+		<div class="page-start" />
+			<button class="color red button large start">Graj</button>
+		</div>
+		<div class="page-game" style="display:none;"/>
+		<span class="message"></span><br/>
+			Twoje punkty : <span class="points"></span>
+			<div class="card-container player-card-container"></div>
+			<span class="computer-message"></span>
+			
+			<div class="opponent">
+				Punkty przeciwnika : <span class="computer-points"></span><br/>
+				<div class="card-container computer-card-container"></div>
+			</div>	
+
+			<button class="color red button large get-card">Pobierz Karte</button>
+			<button class="color red button large check">Pas</button>
+			<button class="color red button large new">Graj</button>
+
+
+		</div>
+	</div>
+  <script src="js/script.js"></script>
+</body>
+</html>
