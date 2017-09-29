@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>BlackJack</title>
   <meta name="description" content="BlackJack Game">
   <meta name="author" content="ppiotr91">
@@ -20,27 +19,37 @@
 <body>
 	<div id="blackjack">
 		<h1>Black jack</h1>
-		<div class="page-start" />
+		<div class="page-start">
+			<span class="lose-message"></span><br/>
 			<button class="color red button large start">Graj</button>
 		</div>
-		<div class="page-game" style="display:none;"/>
+		<div class="page-bid"  style="display:none;">
+			Twoja kasa : <span class='cash money-format'></span><br/>
+			<div class="bid-error"></div>
+			Ustaw wysokosc stawki : <input type='number' name="bid" /><br/>
+			<button class="color red button large next">Dalej</button>
+		</div>
+		<div class="page-game" style="display:none;">
 		<span class="message"></span><br/>
-			Twoje punkty : <span class="points"></span>
+			Twoja kasa : <span class='money-format cash_player'></span><br/>
+			Wysokosc stawki : <span class='money-format bid'></span></br>
+			Wartosc kart : <span class="points"></span>
 			<div class="card-container player-card-container"></div>
-			<span class="computer-message"></span>
-			
+			<span class="computer-message"></span>			
 			<div class="opponent">
-				Punkty przeciwnika : <span class="computer-points"></span><br/>
+				Wartosc kart przeciwnika : <span class="computer-points"></span><br/>
 				<div class="card-container computer-card-container"></div>
 			</div>	
-
 			<button class="color red button large get-card">Pobierz Karte</button>
 			<button class="color red button large check">Pas</button>
 			<button class="color red button large new">Graj</button>
-
-
 		</div>
 	</div>
+  <script src="js/Game.js"></script>
+  <script src="js/Player.js"></script>
+  <script src="js/Human.js"></script>
+  <script src="js/Computer.js"></script>
+  <script src="js/GameUI.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

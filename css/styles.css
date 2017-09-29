@@ -9,7 +9,12 @@ h1{
   font-family: 'Wendy One', sans-serif;
   font-size:48px;
 }
-
+.money-format{
+  color : #ffa31a;
+}
+.money-format::after{
+  content: '$';
+}
 .card-container{
   height:100px;
 }
