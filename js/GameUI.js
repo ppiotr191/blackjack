@@ -10,6 +10,7 @@ class GameUI{
 
 		element.querySelector(".start").addEventListener("click",() => {
             this.player.reset();
+
 			this.start();
 		});
 		element.querySelector(".new").addEventListener("click",() => {
@@ -57,6 +58,7 @@ class GameUI{
     }
 
 	restartGame(){
+		this.game.initGame();
 		this.player.points = 0;
 		this.computer.points = 0;
 		
@@ -67,7 +69,8 @@ class GameUI{
 			this.element.querySelector(".page-game").style.display = 'none';
 			return;
 		}
-
+		
+		document.querySelector(".bid-error").innerHTML = "";
 		document.querySelector(".player-card-container").innerHTML = "";
 		document.querySelector(".message").innerHTML = "";
 		document.querySelector(".points").innerHTML = 0;
@@ -86,6 +89,8 @@ class GameUI{
 	}
 
 	start(){
+        this.element.querySelector("input[name='bid']").focus();
+        this.element.querySelector("input[name='bid']").select();
 		this.restartGame();
 	}
 

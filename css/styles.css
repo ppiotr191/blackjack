@@ -4,7 +4,14 @@ html{
   background-color: #076324;
   background-image: url("http://www.transparenttextures.com/patterns/black-felt.png");
 }
-
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 h1{
   font-family: 'Wendy One', sans-serif;
   font-size:48px;
@@ -20,6 +27,14 @@ h1{
 }
 #blackjack{
   text-align: center;
+}
+
+.my-money{
+  padding : 10px 15px;
+}
+.my-bid{
+  padding : 15px;
+  margin : 10px;
 }
 
 .card {
