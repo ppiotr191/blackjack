@@ -18,7 +18,6 @@ class State{
         }
     }
 }
-
 class StateOption{
     constructor(){
         this.keyOperation = [];
@@ -33,7 +32,6 @@ class StartState extends StateOption{
     constructor(){
         super();
         this.keyOperation[enums.keyboard.ENTER] = () => {
-            console.log("StartState");
             this.gameUI.startEvent();
         }
     }
@@ -43,7 +41,6 @@ class SetBidState extends StateOption{
     constructor(){
         super();
         this.keyOperation[enums.keyboard.ENTER] = () => {
-            console.log("StartState");
             this.gameUI.nextEvent();         
         }
     }
@@ -53,12 +50,10 @@ class GameState extends StateOption{
     constructor(){
         super();
         this.keyOperation[enums.keyboard.ENTER] = () => {
-            console.log("Game");  
             this.gameUI.checkEvent();        
         }
         
         this.keyOperation[enums.keyboard.SPACE] = () => {
-            console.log("Game");  
             this.gameUI.getCardEvent();;        
         }
     }
@@ -68,7 +63,6 @@ class FinishState extends StateOption{
     constructor(){
         super();
         this.keyOperation[enums.keyboard.ENTER] = () => {
-            console.log("End");
             this.gameUI.newGameEvent();           
         }        
     }
