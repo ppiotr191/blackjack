@@ -19,41 +19,50 @@
 <body>
 	<div id="blackjack">
 		<h1>Black jack</h1>
+		<a href="#" class="flag-poland"><img src="images\poland.png" /></a>
+		<a href="#" class="flag-england"><img src="images\uk.png" /></a> <br/>
 		<div class="page-start">
 			<span class="lose-message"></span><br/>
 			<button class="color red button large start">Graj</button>
 		</div>
 		<div class="page-bid"  style="display:none;">
 			<div class="my-money">
-					Twoja kasa : <span class='cash money-format'></span>
+					<label class="cash-label"></label> : <span class='cash money-format'></span>
 			</div>
 			<div class="my-bid">
 					<div class="bid-error"></div>
-					Ustaw wysokosc stawki : <br/><input type='number' name="bid"/>
+					<label class="set-bet-label"></label> <br/>
+					<input type='number' name="bid"/>
 			</div>
 			<button class="color red button large next">Dalej</button>
 		</div>
 		<div class="page-game" style="display:none;">
-		<span class="message"></span><br/>
-			Twoja kasa : <span class='money-format cash_player'></span><br/>
-			Wysokosc stawki : <span class='money-format bid'></span></br>
-			Wartosc kart : <span class="points"></span>
+			<span class="message"></span><br/>
+			<label class="cash-label"></label> : <span class='money-format cash_player'></span><br/>
+			<label class="bet-label"></label> : <span class='money-format bid'></span></br>
+				<label class="value-label"></label> : <span class="points"></span>
 			<div class="card-container player-card-container"></div>
 			<span class="computer-message"></span>			
 			<div class="opponent">
-				Wartosc kart przeciwnika : <span class="computer-points"></span><br/>
-				<div class="card-container computer-card-container"></div>
+				<label class="opponent-value-label"></label> : <span class="computer-points"></span><br/>
+			<div class="card-container computer-card-container"></div>
 			</div>	
 			<button class="color red button large get-card">Pobierz Karte</button>
 			<button class="color red button large check">Pas</button>
 			<button class="color red button large new">Graj</button>
 		</div>
 	</div>
+	<script src="js/keyboard_code_enums.js"></script>
+	<script src="js/language-en.js"></script>
+	<script src="js/language-pl.js"></script>
+	<script src="js/Language.js"></script>	
   <script src="js/Game.js"></script>
   <script src="js/Player.js"></script>
   <script src="js/Human.js"></script>
-  <script src="js/Computer.js"></script>
-  <script src="js/GameUI.js"></script>
+	<script src="js/Computer.js"></script>
+	<script src="js/State.js"></script>	
+	<script src="js/GameUI.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
