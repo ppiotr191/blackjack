@@ -30,7 +30,7 @@ class Game {
         }
         
         getRandomCard() {
-            //var desiredIndex = Math.floor(Math.random() * this.cardPoints.length);
+            var desiredIndex = Math.floor(Math.random() * this.cardPoints.length);
             var card = this.cardPoints[desiredIndex];
             this.cardPoints.splice(desiredIndex, 1);
             return card;
