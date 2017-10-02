@@ -16,19 +16,23 @@ class Game {
     
             for (let i in cardTypes) {
                 for (let name in cardValues) {
-                    this.cardPoints.push({
+                    let card = {
                         value: cardValues[name],
+                        type: name,
                         class: name + '_' + cardTypes[i],
-                    })
+                    };
+                    if (name === 'ace'){
+                        card.additionalValue = 1;
+                    }
+                    this.cardPoints.push(card)
                 }
             }
         }
         
         getRandomCard() {
-            var desiredIndex = Math.floor(Math.random() * this.cardPoints.length);
+            //var desiredIndex = Math.floor(Math.random() * this.cardPoints.length);
             var card = this.cardPoints[desiredIndex];
             this.cardPoints.splice(desiredIndex, 1);
-            this.points += card.value;
             return card;
         }
     }

@@ -1,5 +1,3 @@
-
-
 class State{
     constructor(gameUI){
         this.gameUI = gameUI;

@@ -62,7 +62,6 @@ class GameUI{
 		this.player.bid = parseInt(element.querySelector("input[name='bid']").value);
 		let validateResult = this.validateBid(this.player.bid);
 
-
 		if (!validateResult.status){
 			document.querySelector('.bid-error').innerHTML = validateResult.message;
 			return false;
@@ -110,8 +109,8 @@ class GameUI{
 
 	restartGame(){
 		this.game.initGame();
-		this.player.points = 0;
-		this.computer.points = 0;
+		this.player.resetPoints();
+		this.computer.resetPoints();
 		this.state.setState(new SetBidState());	
 
 		if (this.player.cash <= 0){
@@ -149,10 +148,12 @@ class GameUI{
 
 	getCard(){
 		let card = this.player.drawCard();
+		
 		let cardElement = document.createElement("div");
 		cardElement.className = "card " + card.class;
 		this.element.querySelector(".player-card-container").appendChild(cardElement);
 		this.element.querySelector(".points").innerHTML = this.player.points;
+
 		if (this.player.isLost()) {
 			this.state.setState(new FinishState());
 			this.player.cash -= this.player.bid;

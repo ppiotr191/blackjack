@@ -4,7 +4,7 @@ class Human extends Player {
         this.reset();
 	}
 
-    reset(){
+    reset(){        
 		this.cash = 10000;
 		this.bid = 0;
     }
