@@ -5,6 +5,13 @@ html{
   background-color: #076324;
   background-image: url("http://www.transparenttextures.com/patterns/black-felt.png");
 }
+.bid-error{
+    color : #ff1a1a;
+    font-weight: bold;
+}
+button.start{
+    margin-top : 20px;
+}
 input {
   padding: 12px 20px;
   margin: 8px 0;
