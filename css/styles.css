@@ -5,6 +5,9 @@ html{
   background-color: #076324;
   background-image: url("http://www.transparenttextures.com/patterns/black-felt.png");
 }
+.flag{
+    margin:10px;
+}
 .bid-error{
     color : #ff1a1a;
     font-weight: bold;
