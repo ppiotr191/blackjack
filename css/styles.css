@@ -47,6 +47,7 @@ h1{
 
 .card {
   display: inline-block;
+  margin : 2px;
 }
 
 .ace_clubs {
@@ -154,7 +155,7 @@ h1{
 .five_hearts {
  width: 71px;
  height: 97px;
- background: url(../images/windows-playing-cards.png) -294px -99px;
+ background: url(../images/windows-playing-cards.png) -293px -99px;
 }
 
 .six_hearts {
@@ -244,7 +245,7 @@ h1{
 .seven_spades {
  width: 71px;
  height: 97px;
- background: url(../images/windows-playing-cards.png) -440px -197px;
+ background: url(../images/windows-playing-cards.png) -439px -197px;
 }
 
 .eight_spades {
