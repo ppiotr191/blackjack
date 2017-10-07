@@ -1,4 +1,4 @@
-var lang_en = {
+export var langEn = {
     play: 'Play',
     next: 'Next',
     drawCart: 'Draw a cart',

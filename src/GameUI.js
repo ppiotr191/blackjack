@@ -1,4 +1,11 @@
-class GameUI{
+import Game from './Game.js';
+import Player from './Player.js';
+import Human from './Human.js';
+import Computer from './Computer.js';
+import {State, StartState, SetBidState, GameState, FinishState}  from './State.js';
+import Language from './Language.js';
+
+export class GameUI{
 	constructor(element){
 		this.game = new Game();
 		this.player = new Human(this.game);
@@ -59,7 +66,7 @@ class GameUI{
 	}
 	
 	nextEvent(){
-		this.player.bid = parseInt(element.querySelector("input[name='bid']").value);
+		this.player.bid = parseInt(this.element.querySelector("input[name='bid']").value);
 		let validateResult = this.validateBid(this.player.bid);
 
 		if (!validateResult.status){

@@ -1,4 +1,5 @@
-class Language{
+export default class Language{
+	
     constructor(element,languageFiles){
         this.element = element;
         this.currentLanguage = 'en'

@@ -1,4 +1,4 @@
-var enums = {};   
+export var enums = {};   
 enums.keyboard = {
       BACKSPACE: 8,
       TAB: 9,

@@ -1,4 +1,6 @@
-class Human extends Player {
+import {Player} from './Player.js'
+
+export default class Human extends Player {
 	constructor(game) {
 		super(game);
         this.reset();

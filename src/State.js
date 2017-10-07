@@ -1,4 +1,6 @@
-class State{
+import {enums} from './keyboard_code_enums.js';
+
+export class State{
     constructor(gameUI){
         this.gameUI = gameUI;
         this.setState(new StartState());
@@ -16,7 +18,8 @@ class State{
         }
     }
 }
-class StateOption{
+
+export class StateOption{
     constructor(){
         this.keyOperation = [];
     }
@@ -26,7 +29,7 @@ class StateOption{
     }
 }
 
-class StartState extends StateOption{
+export class StartState extends StateOption{
     constructor(){
         super();
         this.keyOperation[enums.keyboard.ENTER] = () => {
@@ -35,7 +38,7 @@ class StartState extends StateOption{
     }
 }
 
-class SetBidState extends StateOption{
+export class SetBidState extends StateOption{
     constructor(){
         super();
         this.keyOperation[enums.keyboard.ENTER] = () => {
@@ -44,7 +47,7 @@ class SetBidState extends StateOption{
     }
 }
 
-class GameState extends StateOption{
+export class GameState extends StateOption{
     constructor(){
         super();
         this.keyOperation[enums.keyboard.ENTER] = () => {
@@ -57,7 +60,7 @@ class GameState extends StateOption{
     }
 }
 
-class FinishState extends StateOption{
+export class FinishState extends StateOption{
     constructor(){
         super();
         this.keyOperation[enums.keyboard.ENTER] = () => {

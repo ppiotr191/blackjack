@@ -1,4 +1,4 @@
-var lang_pl = {
+export var langPl = {
     play : 'Graj',
     next : 'Dalej',
     drawCart : 'Pobierz karte',
