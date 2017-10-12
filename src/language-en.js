@@ -7,7 +7,7 @@ export var langEn = {
     tooSmallBid: "Too small bet",
     notEnoughMoney: "You have not enough money",
     loseTryAgain: "You lost. Can you try again??",
-    exceedLimit: "ExceedLimit 21.",
+    exceedLimit: "Exceed limit 21.",
     win : 'Congratulation, you won!',
     draw : "Draw",
     lose : 'Opponent won',

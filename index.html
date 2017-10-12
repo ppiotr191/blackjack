@@ -1,24 +1,19 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>BlackJack</title>
+  <title>Black Jack</title>
   <meta name="description" content="BlackJack Game">
   <meta name="author" content="ppiotr91">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <link rel="stylesheet" href="css/buttons.css?v=1.0">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Wendy+One" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
 <body>
 	<div id="blackjack">
-		<h1>Black jack</h1>
+		<h1>Black Jack</h1>
 		<button class="flag flag-poland"><img src="images\poland.png" /></button>
 		<button class="flag flag-england"><img src="images\uk.png" /></button> <br/>
 		<div class="page-start">
@@ -47,9 +42,11 @@
 				<label class="opponent-value-label"></label> : <span class="computer-points"></span><br/>
 			<div class="card-container computer-card-container"></div>
 			</div>	
-			<button class="color red button large get-card">Pobierz Karte</button>
-			<button class="color red button large check">Pas</button>
-			<button class="color red button large new">Graj</button>
+			<div class="buttons">
+				<button class="button color red  large get-card">Pobierz Karte</button>
+				<button class="button color red  large check">Pas</button>
+				<button class="button color red  large new">Graj</button>
+			</div>
 		</div>
 	</div>
 

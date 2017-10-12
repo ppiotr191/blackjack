@@ -1,7 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
+
 module.exports = {
   entry: './src/script.js', 	
+  devtool: 'inline-source-map',
+  devServer: {
+      contentBase: '.'
+  },
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, 'dist')
@@ -17,7 +22,20 @@ module.exports = {
             presets: ['env']
           }
         }
-      }
+      },
+      {
+        test: /\.scss$/,
+        use: [{
+            loader: "style-loader"
+        }, {
+            loader: "css-loader",
+            options : {
+              url : false,
+            }
+        }, {
+            loader: "sass-loader",
+        }]
+    }
     ]
 },
 plugins: [
