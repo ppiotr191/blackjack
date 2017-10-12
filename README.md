@@ -1,7 +1,7 @@
 # Blackjack
 This game is simplified version Black Jack game. Application also included multilanguage module and short keys.
 
-#Technology 
+# Technology 
 - Webpack
 - SASS
 - Babel
