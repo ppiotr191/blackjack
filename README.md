@@ -1,4 +1,4 @@
-# Blackjack
+# Black jack
 This game is simplified version of Black Jack game. Application also includes multilanguage module and short keys.
 
 # Technology 
