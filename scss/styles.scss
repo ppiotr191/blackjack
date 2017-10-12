@@ -1,3 +1,4 @@
+$image_path : "../images/";
 html{
   color : #F0F8FF;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -5,7 +6,7 @@ html{
   font-size:26px;
   font-weight:bold;
   background-color: #076324;
-  background-image: url("http://www.transparenttextures.com/patterns/black-felt.png");
+  background-image: url($image_path + "black-felt.png");
 }
 h1{
   font-family: 'Wendy One', sans-serif;
@@ -73,7 +74,7 @@ input {
   }
 }
 
-$image : "../images/windows-playing-cards.png";
+$image : $image_path + "windows-playing-cards.png";
 $values: (ace, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king);
 $colors : (clubs, hearts, spades, diamonds);
 $x : -2px;
@@ -84,7 +85,7 @@ $y : -1px;
       .#{$value}_#{$color}{
           width: 71px;
           height: 97px;
-          background : url('images/windows-playing-cards.png') $x $y;
+          background : url($image) $x $y;
       }
       $x : $x - 73px;
   }
