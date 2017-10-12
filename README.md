@@ -17,6 +17,7 @@ This game is simplified version Black Jack game. Application also included multi
 
 It should start with default url: http://localhost:8080
 
-#Keys:
+# Keys:
 [ENTER] - Start game, Stand
+
 [SPACE] - Draw a cart
