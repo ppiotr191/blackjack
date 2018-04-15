@@ -4,11 +4,12 @@ export default class Language{
         this.element = element;
         this.currentLanguage = 'en'
         this.languageFiles = languageFiles;
-    }
+    } 
 
     setLanguage(lang){
         this.currentLanguage = this.languageFiles[lang];
         this.element.querySelector(".start").innerHTML = this.translate('play');
+        this.element.querySelector(".new").innerHTML = this.translate('play');
         this.element.querySelector(".next").innerHTML = this.translate('next');
         this.element.querySelector(".get-card").innerHTML = this.translate('drawCart');
         this.element.querySelector(".get-card").innerHTML = this.translate('drawCart');

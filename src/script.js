@@ -10,6 +10,6 @@ let languages = {
     en : langEn
 }
 
-let gameUI = new GameUI(element);
+let gameUI = new GameUI(element); 
 gameUI.setLanguages(languages);
 
